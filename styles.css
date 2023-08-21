@@ -1,0 +1,54 @@
+#gameScreen {
+  display: grid;
+  place-items: center; /* Center the content both horizontally and vertically */
+  height: 100vh;
+  background-color: black;
+  grid-template-rows: auto 1px;
+}
+
+#playerInputContainer {
+  display: grid;
+  grid-gap: 10px;
+}
+
+#playerNames {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+  
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px; /* Adjust the width of the game board */
+  }
+  
+  #gameBoard div {
+    background-color: lightgray;
+    height: 90px; /* Adjust the height of the quadrants */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  #gameTitle {
+   
+    
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+  #playersTurn{
+    color: turquoise;
+    font-size: 3rem;
+  }
+  #turnDisplay{
+    color: aqua;
+    background-color: black;
+  }
+  
+  
